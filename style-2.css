@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif; /* If available, use a pixelated font */
+    line-height: 1.6;
+    color: #EEE; /* Light text for readability */
+    background-color: #333; /* Dark background like Minecraft’s main theme */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+header {
+    background-color: #2C3E50; /* Dark gray to keep it subtle and blocky */
+    color: #EEE; /* Light text for the header */
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 4px solid #52c0d9;
+    border-radius: 30px; /* Semi-rounded edges for the header */
+}
+
+header nav ul {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #EEE;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #76D7C4; /* A subtle blue-green for the hover effect */
+}
+
+section {
+    padding: 4rem 0;
+    background-color: #333; /* Slightly lighter gray for section */
+    border-radius: 25px; /* Rounded section corners */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+  background: #52c0d9;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    font-family: 'Minecraft', sans-serif;
+    text-align: center;
+    border: 2px solid #444; /* Simple border for a blocky look */
+    width: 250px; /* Set width for a consistent size */
+    height: 250px; /* Set height for a consistent size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Center align the project cards */
+}
+
+.project-card:hover {
+    transform: translateY(-8px); /* Slight lift effect on hover */
+    background-color: #2C3E50; /* Darken a little on hover */
+}
+
+footer {
+    background-color: #444;
+    color: #EEE;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    border-top: 4px solid #2C3E50;
+    border-radius: 30px; /* Rounded footer edges */
+}
+@media (max-width: 600px) {
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
